@@ -1,0 +1,23 @@
+{
+  "name": "NodemailerTest",
+  "version": "1.0.0",
+  "description": "NodemailerTest",
+  "main": "javascript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fergasto/NodemailerTest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fergasto/NodemailerTest/issues"
+  },
+  "homepage": "https://github.com/Fergasto/NodemailerTest#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
