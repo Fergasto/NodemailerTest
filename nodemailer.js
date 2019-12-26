@@ -1,18 +1,20 @@
 const nodemailer = require('nodemailer')
 
-const transporter = nodemailer.createTransport(
-    {
-    host: 'smtp.ethereal.email',
-    port: 587,
-    secure: false, // true for 465, false for other ports
+const transporter = nodemailer.createTransport({
+    host: 'smtp.mail.ru',
+    port: 465,
+    secure: true, // true for 465, false for other ports
     auth: {
-        user: 'leonora.balistreri@ethereal.email',
-        pass: 'tBzRe8UjKNcKex3H3V'
-    }
+        user: 'ufimtsev_egora@mail.ru',
+        pass: 'fergastospow'
     },
-    {
-    from: `Mailer Test <leonora.balistreri@ethereal.email>`,
-})
+    tls: {
+        // do not fail on invalid certs
+        rejectUnauthorized: false
+    },
+},
+{from: `Mailer Test <ufimtsev_egora@mail.ru>`}
+)
 
 const mailer = message => {
     transporter.sendMail (message, (err, info)=>{
